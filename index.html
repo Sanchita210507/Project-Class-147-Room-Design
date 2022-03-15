@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <script src = "https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+
+            <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-sky src="https://static.vecteezy.com/system/resources/previews/001/218/845/original/colorful-holographic-gradient-background-design-vector.jpg">
+        </a-sky>
+        
+        <!--Carpet-->
+        <a-plane src="https://m.media-amazon.com/images/I/A16RExjNgKL._SY741_.jpg"
+        position = "0 0.1 0.5"
+        rotation = "-90 0 0"
+        width = "12"
+        height = "7">
+        </a-plane>
+
+        <!--Sofa-->
+        <a-box src = "sofa.jpg" depth="1" height="2" width="6.5" rotation = "-90 0 0" position = "0 0.5 0"></a-box>
+        
+        <a-box src = "sofa.jpg"  depth="1" height="1" width="1.7" rotation = "0 0 -90" position = "-4 0.8 0"></a-box>
+
+        <a-box src = "sofa.jpg" depth="1" height="1" width="1.7" rotation = "0 0 -90" position = "4 0.8 0"></a-box>
+
+        <a-box src = "sofa.jpg"  depth="1" height="2" width="6.7" rotation = "0 0 0" position = "0 2.01 -0.9"></a-box>
+
+        <a-box src = "cushion.jpg"  depth = "0.5" height="1.7" width="1.7" rotation = "0 0 0" position = "-1.9 1.8 1"></a-box>
+
+        <a-box src = "cushion.jpg"  depth = "0.5" height="1.7" width="1.7" rotation = "0 0 0" position = "0 1.8 1"></a-box>
+
+        <a-box src = "cushion.jpg"  depth = "0.5" height="1.7" width="1.7" rotation = "0 0 0" position = "1.9 1.8 1"></a-box>
+
+        <a-plane
+        id="wall-poster-left"
+        src="https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
+        position="-5 6 0"
+        rotation="0 0 0"
+        width="4"
+        height="4"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-middle"
+        src="https://images.unsplash.com/photo-1608159477202-8a0e27f807b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        position="0 6 0"
+        rotation="0 0 0"
+        width="4"
+        height="4"
+      ></a-plane>
+
+      <a-plane
+        id="wall-poster-right"
+        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-lake-with-several-trees-around-in-autumn-time-royalty-free-image-1576784617.jpg"
+        position="5 6 0"
+        rotation="0 0 0"
+        width="4"
+        height="4"
+      ></a-plane>
+
+      <a-assets>
+        <img id="platform" src="clock.png">
+      </a-assets>
+
+      <a-circle src="#platform" radius="1" position = "9 5 0" ></a-circle>
+
+      <a-cylinder color="black" open-ended="true" position = "-10 5 2" rotation = "2 0 0"></a-cylinder>
+
+      <a-cylinder color="black" height="5" radius="0.05" position = "-10 3 2"></a-cylinder>
+
+      <a-circle color="black" radius="0.5" rotation = "-90 0 0" position = "-10 0.5 2"></a-circle>
+
+      <a-plane src = "wallpaper.jpg" width="28" height="15" position = "-1.1.8 7 -1" ></a-plane>
+
+      <a-plane position = "-1 -0.1 4" rotation = "-90 0 0" width = "22" height = "5" src = "floor.jpg"></a-plane>
+
+        </a-scene>
+
+    </body>
+</html>
